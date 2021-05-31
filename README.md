@@ -9,3 +9,8 @@ The user can input a text and get the following:
 2) Similar Questions Retrieval: This displays the similar questions for a query entered by the user. The user can specify the number of similar questions he/she needs.
 
 3) Question-Answer: This displays the relevant answers to the corresponding question entered by the user. the user can specify the number of answers he/she needs.
+
+
+Open anaconda terminal and go to the directory where app.py file is stored and run the following command:
+
+streamlit run app.py
