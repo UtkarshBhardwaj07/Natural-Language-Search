@@ -173,7 +173,7 @@ async def get_similar(request: Request, question: str = Form(...), response_clas
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='192.168.0.1', port=8000)
+    uvicorn.run(app, host='<Your IP ADDRESS HERE>', port=8000)
 
   
     
