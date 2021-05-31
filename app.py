@@ -142,6 +142,12 @@ if( navbar == 'Get Answers'):
         dataset_url = 'http://sbert.net/datasets/simplewiki-2020-11-01.jsonl.gz'
         passages_file = 'C:/Users/utkar/Downloads/GitHub/'
         util.http_get(dataset_url, passages_file)
+        
+        passages = []
+        with gzip.open(passages_file, 'rt', encoding='utf8') as fIn:
+            for line in fIn:
+                data = json.loads(line.strip())
+                passages.extend(data['paragraphs'])
     
     model_file = 'C:/Users/utkar/Downloads/GitHub/simplewiki-2020-11-01-msmarco-distilberlt-base-v2-bi_encoder.pt'
     if os.path.exists(model_file):
