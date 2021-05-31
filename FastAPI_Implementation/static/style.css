@@ -1,0 +1,32 @@
+body,h4 {font-family: "Raleway", sans-serif}
+body, html { height: 110%;}
+.bgimg {
+  background-image: url('./images/BG-9.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 700px;
+}
+
+.flexbox-container {
+  display: flex;
+}
+
+.flexbox-container > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 1450px;
+}
+
